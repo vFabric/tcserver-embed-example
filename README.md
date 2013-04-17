@@ -21,9 +21,9 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 &lt;/repository&gt;
 </code>
 </pre>
-  <li> Add/Modify the ~/.m2/settings.xml to add your username and password for the repository. 
+  <li> Add/Modify the ~/.m2/settings.xml to add your username and password for the repository. </li>
 <br>
-NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.</li>
+NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.
 <pre>
 <code>
 &lt;settings&gt;
@@ -42,16 +42,16 @@ NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.</li>
 </ol>
 </ul>
 <ul>
-<li> BUILD </li>
+  <li>BUILD</li>
 <pre><code>
 mvn clean compile assembly:single
 </code></pre>
 
-<li> USAGE</li>
+  <li>USAGE</li>
 <pre><code>
 java -jar target/example-0.0.2-SNAPSHOT-jar-with-dependencies.jar 
 </code></pre>
 
-<li> Result</li>
+  <li>Result</li>
 This will startup a self contained tc Runtime instance with a "Hello, World" webapp on port 8080. It will also listen on port 1099 for incoming jmx connections.
 </ul>
