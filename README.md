@@ -32,7 +32,7 @@ NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.
     &lt;server&gt;
       &lt;id&gt;tcruntime-release&lt;/id&gt;
       &lt;username&gt;!-- Username --!&lt;/username&gt;
-      &lt;password&gt;!-- Insert your decrypted password (which we don't have) --&lt;/password&gt;
+      &lt;password&gt;!-- Insert your decrypted password (which we don't have) --!&lt;/password&gt;
     &lt;/server&gt;
     ...
   &lt;/servers&gt;
