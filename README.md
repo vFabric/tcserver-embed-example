@@ -1,52 +1,54 @@
 tcserver-embed-example
 ======================
-
-* PURPOSE
+<ul>
+<li> PURPOSE </li>
 
 To demonstrate the creation and use of a basic embedded tc Runtime instance using the vFabric Commercial Maven Repository to pull down the tc Server artifacts in a Maven project.
 
-* REQUIREMENTS
+<li>REQUIREMENTS</li>
 - Maven 2.2.1 installed
 
-* PRE-BUILD
-1. Create your own vFabric Commercial Maven Repository (vCMR) account at http://repository.cloudfoundry.com.
-2. Add/Modify a repository shown in the located vCMR in the pom.xml.
+<li>PRE-BUILD</li>
+<ol>
+  <li> Create your own vFabric Commercial Maven Repository (vCMR) account at http://repository.cloudfoundry.com.</li>
+  <li> Add/Modify a repository shown in the located vCMR in the pom.xml.</li>
 <pre>
 <code>
-<repository>
-	<id>tcruntime-release</id>
-	<name>tc Runtime release repository</name>
-	<url>https://repository.cloudfoundry.com/data2/maven/bundles/release</url>
-</repository>
+&lt;repository&gt;
+	&lt;id&gt;tcruntime-release&lt;/id&gt;
+	&lt;name&gt;tc Runtime release repository&lt;/name&gt;
+	&lt;url&gt;https://repository.cloudfoundry.com/data2/maven/bundles/release&lt;/url&gt;
+&lt;/repository&gt;
 </code>
 </pre>
-3. Add/Modify the ~/.m2/settings.xml to add your username and password for the repository. 
-NOTE: Make sure the repository <id> and the server <id> match.
+  <li> Add/Modify the ~/.m2/settings.xml to add your username and password for the repository. 
+NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.</li>
 <pre>
 <code>
-<settings>
-  <servers>
+&lt;settings&gt;
+  &lt;servers&gt;
   	...
-    <server>
-      <id>tcruntime-release</id>
-      <username>jkonicki@vmware.com</username>
-      <password><!-- Insert your decrypted password (which we don't have) --></password>
-    </server>
+    &lt;server&gt;
+      &lt;id&gt;tcruntime-release&lt;/id&gt;
+      &lt;username&gt;!-- Username --!&lt;/username&gt;
+      &lt;password&gt;&lt;!-- Insert your decrypted password (which we don't have) --&gt;&lt;/password&gt;
+    &lt;/server&gt;
     ...
-  </servers>
-</settings>
+  &lt;/servers&gt;
+&lt;/settings&gt;
 </code>
 </pre>
-* BUILD
+</ol>
+<li> BUILD </li>
 <pre><code>
 mvn clean compile assembly:single
 </code></pre>
 
-* USAGE
+<li> USAGE</li>
 <pre><code>
 java -jar target/example-0.0.2-SNAPSHOT-jar-with-dependencies.jar 
 </code></pre>
 
-* Result
+<li> Result</li>
 This will startup a self contained tc Runtime instance with a "Hello, World" webapp on port 8080. It will also listen on port 1099 for incoming jmx connections.
-
+</ul>
