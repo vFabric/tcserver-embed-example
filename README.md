@@ -22,6 +22,7 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 </code>
 </pre>
   <li> Add/Modify the ~/.m2/settings.xml to add your username and password for the repository. 
+<br>
 NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.</li>
 <pre>
 <code>
@@ -31,7 +32,7 @@ NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.</li>
     &lt;server&gt;
       &lt;id&gt;tcruntime-release&lt;/id&gt;
       &lt;username&gt;!-- Username --!&lt;/username&gt;
-      &lt;password&gt;&lt;!-- Insert your decrypted password (which we don't have) --&gt;&lt;/password&gt;
+      &lt;password&gt;!-- Insert your decrypted password (which we don't have) --&lt;/password&gt;
     &lt;/server&gt;
     ...
   &lt;/servers&gt;
@@ -39,6 +40,8 @@ NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.</li>
 </code>
 </pre>
 </ol>
+</ul>
+<ul>
 <li> BUILD </li>
 <pre><code>
 mvn clean compile assembly:single
