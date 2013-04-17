@@ -43,15 +43,13 @@ NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.
 </ul>
 <ul>
   <li>BUILD</li>
-<pre><code>
+<code>
 mvn clean compile assembly:single
-</code></pre>
-
+</code>
   <li>USAGE</li>
-<pre><code>
+<code>
 java -jar target/example-0.0.2-SNAPSHOT-jar-with-dependencies.jar 
-</code></pre>
-
+</code>
   <li>Result</li>
 This will startup a self contained tc Runtime instance with a "Hello, World" webapp on port 8080. It will also listen on port 1099 for incoming jmx connections.
 </ul>
