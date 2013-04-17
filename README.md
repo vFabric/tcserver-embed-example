@@ -11,7 +11,7 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 <li>PRE-BUILD</li>
 <ol>
   <li> Create your own vFabric Commercial Maven Repository (vCMR) account at http://repository.cloudfoundry.com.</li>
-  <li> Add/Modify a repository shown in the located vCMR in the pom.xml.</li>
+  <li> Add/Modify the pom.xml to add a repository as shown below and in the vCMR.</li>
 <pre>
 <code>
 &lt;repository&gt;
