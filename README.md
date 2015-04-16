@@ -3,14 +3,14 @@ tcserver-embed-example
 <ul>
 <li> PURPOSE </li>
 
-To demonstrate the creation and use of a basic embedded tc Runtime instance using the vFabric Commercial Maven Repository to pull down the tc Server artifacts in a Maven project.
+To demonstrate the creation and use of a basic embedded tc Runtime instance using the Pivotal Commercial Maven Repository to pull down the tc Server artifacts in a Maven project.
 
 <li>REQUIREMENTS</li>
 - Maven 2.2.1 installed
 
 <li>PRE-BUILD</li>
 <ol>
-  <li> Create your own vFabric Commercial Maven Repository (vCMR) account at http://repository.cloudfoundry.com.</li>
+  <li> Create your own Pivotal Commercial Maven Repository (vCMR) account at http://repository.cloudfoundry.com.</li>
   <li> Add/Modify the pom.xml to add a repository as shown below and in the vCMR.</li>
 <pre>
 <code>
