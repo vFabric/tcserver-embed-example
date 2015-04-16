@@ -17,7 +17,7 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 &lt;repository&gt;
 	&lt;id&gt;tcruntime-release&lt;/id&gt;
 	&lt;name&gt;tc Runtime release repository&lt;/name&gt;
-	&lt;url&gt;https://repository.cloudfoundry.com/data2/maven/bundles/release&lt;/url&gt;
+	&lt;url&gt;http://commercial-repo.pivotal.io/data3/tcruntime-release/maven/bundles/release&lt;/url&gt;
 &lt;/repository&gt;
 </code>
 </pre>

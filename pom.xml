@@ -42,14 +42,14 @@
 	</build>
 	<repositories>
 	<repository>
-	       <id>tcserver-embed-release-repo</id>
+	       <id>tcruntime-release</id>
 	       <name>TC Server Embedded Runtime</name>
 	       <snapshots>
             <enabled>true</enabled>
             <updatePolicy>always</updatePolicy>
             <checksumPolicy>fail</checksumPolicy>
           </snapshots>
-	       <url>http://repository.cloudfoundry.com/data2/maven/bundles/release</url>
+	       <url>http://commercial-repo.pivotal.io/data3/tcruntime-release/maven/bundles/release</url>
 	   </repository>
 	</repositories>
 	<dependencies>
