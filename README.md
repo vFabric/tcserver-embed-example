@@ -53,3 +53,10 @@ java -jar target/example-0.0.3-SNAPSHOT-jar-with-dependencies.jar
   <li>Result</li>
 This will startup a self contained tc Runtime instance with a "Hello, World" webapp on port 8080. It will also listen on port 1099 for incoming jmx connections.
 </ul>
+
+Additional Documentation
+========================
+
+Full tc Server Documentation can me found at http://tcserver.docs.pivotal.io/
+
+More on embedded tc Server can be found at http://tcserver.docs.pivotal.io/docs-tcserver/topics/postinstall-getting-started.html#postinstall-embed
