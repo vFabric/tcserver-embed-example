@@ -15,9 +15,9 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 <pre>
 <code>
 &lt;repository&gt;
-	&lt;id&gt;tcruntime-release&lt;/id&gt;
+	&lt;id&gt;tcserver-release-repo&lt;/id&gt;
 	&lt;name&gt;tc Runtime release repository&lt;/name&gt;
-	&lt;url&gt;http://commercial-repo.pivotal.io/data3/tcruntime-release/maven/bundles/release&lt;/url&gt;
+	&lt;url&gt;http://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver&lt;/url&gt;
 &lt;/repository&gt;
 </code>
 </pre>
@@ -30,7 +30,7 @@ NOTE: Make sure the repository &lt;id&gt; and the server &lt;id&gt; match.
   &lt;servers&gt;
   	...
     &lt;server&gt;
-      &lt;id&gt;tcruntime-release&lt;/id&gt;
+      &lt;id&gt;tcserver-release-repo&lt;/id&gt;
       &lt;username&gt;!-- Username --!&lt;/username&gt;
       &lt;password&gt;!-- Insert your decrypted password (which we don't have) --!&lt;/password&gt;
     &lt;/server&gt;
@@ -48,7 +48,7 @@ mvn clean compile assembly:single
 </code>
   <li>USAGE</li>
 <code>
-java -jar target/example-0.0.2-SNAPSHOT-jar-with-dependencies.jar 
+java -jar target/example-0.0.3-SNAPSHOT-jar-with-dependencies.jar 
 </code>
   <li>Result</li>
 This will startup a self contained tc Runtime instance with a "Hello, World" webapp on port 8080. It will also listen on port 1099 for incoming jmx connections.

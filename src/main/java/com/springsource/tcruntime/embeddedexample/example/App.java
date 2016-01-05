@@ -23,7 +23,7 @@ public class App {
     Tomcat tomcat = new Tomcat();
     tomcat.setPort(8080);
 
-    Context ctx = tomcat.addContext("/", new File(".").getAbsolutePath());
+    Context ctx = tomcat.addContext("", new File(".").getAbsolutePath());
 
     // JMX
     JmxSocketListener jmxListener = new JmxSocketListener();

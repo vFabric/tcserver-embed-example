@@ -4,7 +4,7 @@
 
 	<groupId>com.springsource.tcruntime.embeddedexample</groupId>
 	<artifactId>example</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>example</name>
@@ -12,6 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<tcruntime.version>7.0.67.B.RELEASE</tcruntime.version>
+		<tcserver.version>3.1.3.RELEASE</tcserver.version>
 	</properties>
 	<build>
 		<plugins>
@@ -42,41 +44,36 @@
 	</build>
 	<repositories>
 	<repository>
-	       <id>tcruntime-release</id>
+	       <id>tcserver-release-repo</id>
 	       <name>TC Server Embedded Runtime</name>
-	       <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-            <checksumPolicy>fail</checksumPolicy>
-          </snapshots>
-	       <url>http://commercial-repo.pivotal.io/data3/tcruntime-release/maven/bundles/release</url>
+	       <url>http://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver</url>
 	   </repository>
 	</repositories>
 	<dependencies>
 		<dependency>
-			<groupId>com.springsource.vfabric.tcruntime.embed</groupId>
-			<artifactId>com.springsource.org.apache.tomcat.embed.core</artifactId>
-			<version>7.0.59.B.RELEASE</version>
+			<groupId>tcruntime.embed</groupId>
+			<artifactId>io.pivotal.tcserver.org.apache.tomcat.core</artifactId>
+			<version>${tcruntime.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.springsource.vfabric.tcruntime.embed</groupId>
-			<artifactId>com.springsource.org.apache.tomcat.embed.logging.juli</artifactId>
-			<version>7.0.59.B.RELEASE</version>
+			<groupId>tcruntime.embed</groupId>
+			<artifactId>io.pivotal.tcserver.org.apache.tomcat.logging.juli</artifactId>
+			<version>${tcruntime.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.springsource.vfabric.tcruntime.embed</groupId>
-			<artifactId>com.springsource.org.apache.tomcat.embed.logging.log4j</artifactId>
-			<version>7.0.59.B.RELEASE</version>
+			<groupId>tcruntime.embed</groupId>
+			<artifactId>io.pivotal.tcserver.org.apache.tomcat.logging.log4j</artifactId>
+			<version>${tcruntime.version}</version>
 		</dependency>
         <dependency>
-            <groupId>com.springsource.vfabric.tcruntime.embed</groupId>
-            <artifactId>com.springsource.org.apache.tomcat.embed.jasper</artifactId>
-            <version>7.0.59.B.RELEASE</version>
+            <groupId>tcruntime.embed</groupId>
+            <artifactId>io.pivotal.tcserver.org.apache.tomcat.jasper</artifactId>
+            <version>${tcruntime.version}</version>
         </dependency>
         <dependency>
-            <groupId>com.springsource.vfabric.tcruntime.embed</groupId>
-            <artifactId>com.springsource.tcserver</artifactId>
-            <version>3.1.0.RELEASE</version>
+            <groupId>tcruntime.embed</groupId>
+            <artifactId>io.pivotal.tcserver</artifactId>
+            <version>${tcserver.version}</version>
         </dependency>
 		<dependency>
 			<groupId>junit</groupId>
