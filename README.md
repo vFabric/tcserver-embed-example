@@ -10,7 +10,7 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 
 <li>PRE-BUILD</li>
 <ol>
-  <li> Create your own Pivotal Commercial Maven Repository (vCMR) account at http://repository.cloudfoundry.com.</li>
+  <li> Create your own Pivotal Commercial Maven Repository (vCMR) account at http://commercial-repo.pivotal.io.</li>
   <li> Add/Modify the pom.xml to add a repository as shown below and in the vCMR.</li>
 <pre>
 <code>
