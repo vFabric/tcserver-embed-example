@@ -10,14 +10,14 @@ To demonstrate the creation and use of a basic embedded tc Runtime instance usin
 
 <li>PRE-BUILD</li>
 <ol>
-  <li> Create your own Pivotal Commercial Maven Repository (vCMR) account at http://commercial-repo.pivotal.io.</li>
+  <li> Create your own Pivotal Commercial Maven Repository (vCMR) account at https://commercial-repo.pivotal.io.</li>
   <li> Add/Modify the pom.xml to add a repository as shown below and in the vCMR.</li>
 <pre>
 <code>
 &lt;repository&gt;
 	&lt;id&gt;tcserver-release-repo&lt;/id&gt;
 	&lt;name&gt;tc Runtime release repository&lt;/name&gt;
-	&lt;url&gt;http://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver&lt;/url&gt;
+	&lt;url&gt;https://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver&lt;/url&gt;
 &lt;/repository&gt;
 </code>
 </pre>
