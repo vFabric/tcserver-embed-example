@@ -59,4 +59,4 @@ Additional Documentation
 
 Full tc Server Documentation can me found at http://tcserver.docs.pivotal.io/
 
-More on embedded tc Server can be found at http://tcserver.docs.pivotal.io/docs-tcserver/topics/postinstall-getting-started.html#postinstall-embed
+More on embedded tc Server can be found at http://tcserver.docs.pivotal.io/docs-tcserver/topics/postinstall-getting-started.html#postinstall-embedding-tc-server
