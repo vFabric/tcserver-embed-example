@@ -4,7 +4,7 @@
 
 	<groupId>com.springsource.tcruntime.embeddedexample</groupId>
 	<artifactId>example</artifactId>
-	<version>0.0.5-SNAPSHOT</version>
+	<version>0.0.6-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>example</name>
@@ -12,8 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<tcruntime.version>7.0.78.B.RELEASE</tcruntime.version>
-		<tcserver.version>3.2.6.RELEASE</tcserver.version>
+		<tcruntime.version>7.0.81.B.RELEASE</tcruntime.version>
+		<tcserver.version>3.2.7.RELEASE</tcserver.version>
 	</properties>
 	<build>
 		<plugins>
