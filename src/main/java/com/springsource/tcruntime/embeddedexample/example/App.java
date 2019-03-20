@@ -1,6 +1,6 @@
+
 package com.springsource.tcruntime.embeddedexample.example;
 
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,12 +18,11 @@ import java.io.Writer;
 
 public class App {
 
-  public static void main(String[] args)
-  throws LifecycleException, InterruptedException, ServletException {
+  public static void main(String[] args) throws LifecycleException {
     Tomcat tomcat = new Tomcat();
     tomcat.setPort(8080);
 
-    Context ctx = tomcat.addContext("", new File(".").getAbsolutePath());
+    Context context = tomcat.addContext("", new File(".").getAbsolutePath());
 
     // JMX
     JmxSocketListener jmxListener = new JmxSocketListener();
@@ -35,15 +34,15 @@ public class App {
     tomcat.getServer().addLifecycleListener(deployer);
     
     // This should be a separate class but for demo purposes this is sufficient.
-    Tomcat.addServlet(ctx, "hello", new HttpServlet() {
+    Tomcat.addServlet(context, "hello", new HttpServlet() {
       protected void service(HttpServletRequest req, HttpServletResponse resp) 
-      throws ServletException, IOException {
+      throws IOException {
         Writer w = resp.getWriter();
         w.write("Hello, World!\n");
         w.flush();
       }
     });
-    ctx.addServletMapping("/*", "hello");
+    context.addServletMappingDecoded("/*", "hello");
 
     tomcat.start();
     //without this the process exits

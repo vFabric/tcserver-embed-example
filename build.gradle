@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+application {
+    mainClassName = "com.springsource.tcruntime.embeddedexample.example.App"
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        credentials {
+            username "$tcserverReleaseRepoUser"
+            password "$tcserverReleaseRepoPassword"
+        }
+        url "https://commercial-repo.pivotal.io/data3/tcserver-release-repo/tcserver"
+    }
+}
+
+dependencies {
+    compile "tcruntime.embed:io.pivotal.tcserver.org.apache.tomcat.core:${tcruntimeVersion}"
+    compile "tcruntime.embed:io.pivotal.tcserver.org.apache.tomcat.jasper:${tcruntimeVersion}"
+    compile "tcruntime.embed:io.pivotal.tcserver:${tcserverVersion}:${jdkClassifier}"
+    compile "javax.annotation:javax.annotation-api:${javaXAnnotationVersion}"
+}
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
