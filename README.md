@@ -31,6 +31,6 @@ This will build and start the application listening on port 8080
 Additional Documentation
 ========================
 
-Full tc Server Documentation can me found at https://tcserver.docs.pivotal.io/
+Full tc Server Documentation can be found at https://tcserver.docs.pivotal.io/
 
 More on embedded tc Server can be found at https://tcserver.docs.pivotal.io/4x/docs-tcserver/topics/postinstall-getting-started.html#postinstall-embedding-tc-server
