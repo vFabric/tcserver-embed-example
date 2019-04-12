@@ -1,6 +1,6 @@
 ---
 resources:
-  - name: tcs-embed-example-master
+  - name: tcs-embed-example
     type: git
     source:
       uri: https://github.com/appsuite/tcs-embed-example.git
