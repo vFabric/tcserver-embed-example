@@ -1,0 +1,18 @@
+---
+resources:
+  - name: tcs-embed-example-master
+    type: git
+    source:
+      uri: https://github.com/appsuite/tcs-embed-example.git
+      branch: master
+      username: ((github-username))
+      password: ((github-password))
+
+jobs:
+  - name: tcs-embed-example-job
+    public: true
+    plan:
+      - get: tcs-embed-example
+        trigger: true
+      - task: build
+        file: tcs-embed-example/ci/build.yml
