@@ -7,6 +7,11 @@ application {
     mainClassName = "com.springsource.tcruntime.embeddedexample.example.App"
 }
 
+
+def tcserverReleaseRepoUser = project.hasProperty('tcserverReleaseRepoUser') ? project.tcserverReleaseRepoUser : System.getenv()['TCSERVER_COM_REPO_USER']
+def tcserverReleaseRepoPassword = project.hasProperty('tcserverReleaseRepoPassword') ? project.tcserverReleaseRepoPassword : System.getenv()['TCSERVER_COM_REPO_KEY']
+
+
 repositories {
     mavenCentral()
     maven {

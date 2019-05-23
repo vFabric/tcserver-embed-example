@@ -10,5 +10,9 @@ image_resource:
 inputs:
   - name: tcs-embed-example
 
+params:
+  - TCSERVER_COM_REPO_USER = ((tcserver_com_repo_user))
+  - TCSERVER_COM_REPO_KEY = ((tcserver_com_repo_key))
+
 run:
   path: tcs-embed-example/ci/build.sh
