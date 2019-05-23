@@ -1,4 +1,6 @@
 #!/bin/bash
+# The purpose of this script is to verify the builds for each of maven and gradle
+#
 
 export TERM=${TERM:-dumb}
 
@@ -19,4 +21,10 @@ done
 # Change into our working directory
 cd `dirname ${SCRIPT}`/..
 
+echo "Building with gradle"
+
 ./gradlew --no-daemon --info build
+
+echo "Building with maven"
+
+./mvnw package
