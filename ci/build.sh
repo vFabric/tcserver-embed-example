@@ -25,6 +25,3 @@ echo "Building with gradle"
 
 ./gradlew --no-daemon --info build
 
-echo "Building with maven"
-
-./mvnw package
