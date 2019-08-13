@@ -12,8 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<tcruntime.version>8.5.41.B.RELEASE</tcruntime.version>
-		<tcserver.version>4.0.7.RELEASE</tcserver.version>
+		<tcruntime.version>8.5.43.B.RELEASE</tcruntime.version>
+		<tcserver.version>4.0.8.RELEASE</tcserver.version>
 	</properties>
 	<build>
 		<plugins>
